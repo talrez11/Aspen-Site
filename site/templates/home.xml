@@ -9,7 +9,38 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<header>
+				<span class="logo"></span>
+				<h1><cms:text constant="header"/></h1>
+				<h2><cms:text constant="header_desc"/></h2>
+				<div class="form_container">
+					<h2><cms:text constant="form_title"/></h2>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+					/>
+				</div>
+			</header>
+
+			<div class="wrap">
+				<h2><cms:text constant="wrap_title"/></h2>
+				<h3><cms:text constant="feature1"/></h3>
+				<h3><cms:text constant="feature2"/></h3>
+				<h3><cms:text constant="feature3"/></h3>
+			</div>
+
+			<div class="wrap blue">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="about_article"
+					template="parts/article.xml"
+				/>
+				<aside>
+
+				</aside>
+			</div>
 		</body>
 	</html>
 </document>
