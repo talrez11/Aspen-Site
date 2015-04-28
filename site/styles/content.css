@@ -1,0 +1,98 @@
+/**
+ * Main Style Sheet
+ * Aspen-Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors: Tal Reznic
+ */
+
+ /*RESET*/
+p,h1,h2,h3,h4,h5,h6 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+p {
+	font-size: 1.3em;
+}
+span {
+	font-size: 1.2em;
+}
+
+.wrap {
+  	display: block;
+ 	padding:50px calc((100vw - 1200px) / 2);
+ 	background-color: white;
+ 	text-align: center;
+}
+
+.blue {
+	background-color:#33485d
+}
+
+
+/*Content*/
+
+div.wrap > h2 {
+	display: block;
+	padding-bottom: 50px;
+	font-size: 3em;
+	font-weight: 100;
+}
+
+div.wrap > h3 {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 200px;
+	width: 33.3%;
+	position: relative;
+}
+
+div.wrap > h3:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left:-100px;
+	background-image: url(../images/icons-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size:600px 200px;
+	width: 200px;
+	height: 200px;
+}
+
+div.wrap > h3:nth-of-type(2):before {
+	background-position: -200px 0px;
+}
+
+div.wrap > h3:nth-of-type(3):before {
+	background-position: -400px 0px;
+}
+
+/*About Section*/
+
+div.about_article {
+	display: block;
+	text-align: left;
+	color:white;
+	width:50%;
+}
+
+div.about_article > h2 {
+	display: block;
+	padding-bottom: 0px;
+	font-size: 3em;
+	font-weight:300;
+}
+
+div.about_article > h3 {
+	display: block;
+	padding-bottom: 0px;
+	font-weight:300;
+}
+
+div.about_article p {
+	display: block;
+	padding-top:40px;
+}
