@@ -37,9 +37,16 @@
 					text_id="about_article"
 					template="parts/article.xml"
 				/>
-				<aside>
+				<aside></aside>
+			</div>
 
-				</aside>
+			<div class="wrap">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="activity_article"
+					template="parts/article.xml"
+				/>
 			</div>
 		</body>
 	</html>
