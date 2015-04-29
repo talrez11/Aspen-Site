@@ -40,14 +40,32 @@
 				<aside></aside>
 			</div>
 
-			<div class="wrap">
+			<div class="activities">
 				<cms:module
 					name="articles"
 					action="show"
 					text_id="activity_article"
 					template="parts/article.xml"
 				/>
-			</div>
+
+				<div class="galleries_names">
+					<cms:module
+						name="gallery"
+						action="show_group_list"
+						template="parts/gallery_title.xml"
+					/>
+				</div>
+
+				<div class="galleries_images">
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="food_alcohol"
+						template="parts/image.xml"
+						cms:eval="group"
+
+					/>
+				</div>
 		</body>
 	</html>
 </document>
