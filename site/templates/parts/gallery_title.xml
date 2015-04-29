@@ -1,0 +1,5 @@
+<document>
+	<a href="#" data-gallery="$params['id']" style="'background-image: url('.gallery::getGroupThumbnailById($params['id'],null, 100, Thumbnail::CONSTRAIN_WIDTH).');'" cms:eval="data-gallery,style">
+		<cms:var param="name" multilanguage="yes"/>
+	</a>
+</document>
