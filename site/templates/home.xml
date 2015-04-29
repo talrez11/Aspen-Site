@@ -60,12 +60,53 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="food_alcohol"
+						group="cosmetics"
 						template="parts/image.xml"
 						cms:eval="group"
-
 					/>
 				</div>
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="activity_bottom_article"
+					template="parts/article_no_title.xml"
+				/>
+			</div>
+
+			<div class="contact blue wrap">
+				<div>
+					<span class="logo"></span>
+					<h2><cms:text constant="header"/></h2>
+					<h3><cms:text constant="header_desc"/></h3>
+				</div>
+				<div>
+					<h2><cms:text constant="share"/></h2>
+					<span><cms:text constant="social_share"/></span>
+					<a href="#" class="social"></a>
+					<a href="#" class="social"></a>
+					<a href="#" class="social"></a>
+					<a href="#" class="social"></a>
+					<span><cms:text constant="phone"/></span>
+					<span><cms:text constant="fax"/></span>
+					<span><cms:text constant="mail"/></span>
+					<span><cms:text constant="adress"/></span>
+					<a href="" class="phone"><cms:text constant="number"/></a>
+				</div>
+
+				<div>
+					<h2><cms:text constant="form_title"/></h2>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+					/>
+				</div>
+
+			</div>
+
+
+
 		</body>
 	</html>
 </document>
