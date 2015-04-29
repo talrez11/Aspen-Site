@@ -107,9 +107,38 @@ div.wrap.blue aside:before {
 	-webkit-animation-fill-mode: initial;
 }
 
+div.wrap.blue aside:after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-image: url(../images/warehouse2.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: auto 100%;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-animation: switchImage2 6s infinite;
+	-webkit-animation-fill-mode: initial;
+}
+
+@-webkit-keyframes switchImage2 {
+	0%{opacity: 0;}
+	20%{opacity:0;}
+    40% {opacity:0;}
+    60%{opacity:0;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+
 @-webkit-keyframes switchImage {
-    50% {opacity: 1;}
-    100% {opacity: 0;}
+	0%{opacity: 0;}
+	20%{opacity:0;}
+    40% {opacity:1;}
+    60%{opacity:1;}
+    80% {opacity:0;}
+    100% {opacity:0;}
 }
 
 div.about_article {
@@ -142,9 +171,18 @@ div.about_article p {
 
 /*Activity Section*/
 
-div.wrap:nth-of-type(3) {
+div.activities {
+	display: block;
+	text-align: center;
+	background-color:  #33485d;
+
+}
+
+div.activity_article {
+	display: block;
+	padding-top: 50px;
 	background-image: url(../images/texture-background.png);
-	background-repeat: repeat;
+	background-repeat:repeat;
 	background-position: center center;
 	background-size: 200px 200px;
 }
@@ -157,5 +195,51 @@ div.activity_article h2 {
 
 div.activity_article p {
 	padding-top: 40px;
+	padding-bottom: 40px;
 	font-size: 1.5em;
+}
+
+/*Gallery*/
+
+div.galleries_names {
+	display: block;
+	padding-bottom: 80px;
+	background-image: url(../images/texture-background.png);
+	background-repeat:repeat;
+	background-position: center center;
+	background-size: 200px 200px;
+}
+
+div.galleries_names a {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 100px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	color:#33485d;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+
+div.galleries_images {
+	display: block;
+	margin-top: -40px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+	width: 1200px;
+}
+
+div.galleries_images img {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: 10px;
 }
