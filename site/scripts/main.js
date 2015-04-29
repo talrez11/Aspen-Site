@@ -51,12 +51,34 @@ Site.is_mobile = function() {
 Site.on_load = function() {
 
 	var container = new Caracal.Gallery.Container();
-	container.set_containter('div.galleries_images');
+	container
+			.images.add('div.galleries_images img')
+			.images.set_container('div.galleries_images');
+
+	function make_image(data) {
+		var image = $('<img>');
+		image
+			.attr('src',data.image);
+
+		return image;
+	}
+
+	Caracal.loader = new Caracal.Gallery.Loader();
+	Caracal.loader
+			.add_gallery(container)
+			.set_constructor(make_image);
 
 	var list = $('div.galleries_names a');
-	list.on('click',function(){
+	list.first().addClass('active');
+
+	list.on('click',function() {
 		event.preventDefault();
-		alert('Hello');
+		var link = $(this);
+		list.not(link).removeClass('active');
+		link.addClass('active');
+		var gallery_id = link.data('gallery');
+		Caracal.loader.load_by_group_id(gallery_id);
+
 	});
 };
 
