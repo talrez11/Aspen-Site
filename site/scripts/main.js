@@ -49,6 +49,15 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
+
+	var container = new Caracal.Gallery.Container();
+	container.set_containter('div.galleries_images');
+
+	var list = $('div.galleries_names a');
+	list.on('click',function(){
+		event.preventDefault();
+		alert('Hello');
+	});
 };
 
 
