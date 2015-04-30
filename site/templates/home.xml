@@ -91,11 +91,18 @@
 					<span><cms:text constant="fax"/></span>
 					<span><cms:text constant="mail"/></span>
 					<span><cms:text constant="adress"/></span>
-					<a href="" class="phone"><cms:text constant="number"/></a>
+					<a
+						href="'tel:'.Language::getText('number')"
+						class="phone"
+						cms:eval="href,class"
+					>
+					<cms:text constant="number"/>
+					</a>
 				</div>
 
 				<div>
-					<h2><cms:text constant="form_title"/></h2>
+					<h2><cms:text constant="contact_title"/></h2>
+					<span><cms:text constant="contact_desc"/></span>
 					<cms:module
 						name="contact_form"
 						action="show"
@@ -105,7 +112,9 @@
 
 			</div>
 
-
+			<footer>
+				<span><cms:text constant="copyright"/></span>
+			</footer>
 
 		</body>
 	</html>
