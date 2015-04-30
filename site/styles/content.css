@@ -433,26 +433,49 @@ div.contact div:nth-of-type(2) span {
 	vertical-align: top;
 	margin-left: 10px;
 	margin-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 	background-image: url(../images/linkedin.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 30px 30px;
+	border-radius:50%;
 	width: 30px;
 	height: 30px;
 }
 
+a.social:nth-of-type(1) {
+ 	background-image: url(../images/linkedin.svg);
+ 	transition:all 0.3s;
+ }
+
+ a.social:nth-of-type(1):hover {
+ 	background-color:#11b260;
+ }
+
  a.social:nth-of-type(2) {
  	background-image: url(../images/facebook3.svg);
+ 	transition:all 0.3s;
+ }
+
+  a.social:nth-of-type(2):hover {
+ 	background-color:#11b260;
  }
 
   a.social:nth-of-type(3) {
  	background-image: url(../images/twitter3.svg);
+ 	transition:all 0.3s;
+ }
+
+  a.social:nth-of-type(3):hover {
+ 	background-color:#11b260;
  }
 
   a.social:nth-of-type(4) {
  	background-image: url(../images/google-plus3.svg);
+ 	transition:all 0.3s;
+ }
+
+  a.social:nth-of-type(4):hover {
+ 	background-color:#11b260;
  }
 
  a.phone {
