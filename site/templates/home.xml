@@ -14,7 +14,13 @@
 				<h1><cms:text constant="header"/></h1>
 				<h2><cms:text constant="header_desc"/></h2>
 				<div class="form_container">
+				<cms:desktop>
 					<h2><cms:text constant="form_title"/></h2>
+				</cms:desktop>
+				<cms:mobile>
+					<h2><cms:text constant="contact_title"/></h2>
+					<span><cms:text constant="contact_desc"/></span>
+				</cms:mobile>
 					<cms:module
 						name="contact_form"
 						action="show"
@@ -47,7 +53,7 @@
 					text_id="activity_article"
 					template="parts/article.xml"
 				/>
-
+			<cms:desktop>
 				<div class="galleries_names">
 					<cms:module
 						name="gallery"
@@ -55,6 +61,19 @@
 						template="parts/gallery_title.xml"
 					/>
 				</div>
+			</cms:desktop>
+
+			<cms:mobile>
+				<div class="scroll_wrap">
+					<div class="galleries_names">
+						<cms:module
+							name="gallery"
+							action="show_group_list"
+							template="parts/gallery_title.xml"
+						/>
+					</div>
+				</div>
+			</cms:mobile>
 
 				<div class="galleries_images">
 					<cms:module
@@ -73,45 +92,82 @@
 					template="parts/article_no_title.xml"
 				/>
 			</div>
+			<cms:desktop>
+				<div class="contact blue wrap">
+					<div>
+						<span class="logo"></span>
+						<h2><cms:text constant="header"/></h2>
+						<h3><cms:text constant="header_desc"/></h3>
+					</div>
+					<div>
+						<h2><cms:text constant="share"/></h2>
+						<span><cms:text constant="social_share"/></span>
+						<a href="#" class="social"></a>
+						<a href="#" class="social"></a>
+						<a href="#" class="social"></a>
+						<a href="#" class="social"></a>
+						<span><cms:text constant="phone"/></span>
+						<span><cms:text constant="fax"/></span>
+						<span><cms:text constant="mail"/></span>
+						<span><cms:text constant="adress"/></span>
+						<a
+							href="'tel:'.Language::getText('number')"
+							class="phone"
+							cms:eval="href,class"
+						>
+						<cms:text constant="number"/>
+						</a>
+					</div>
 
-			<div class="contact blue wrap">
-				<div>
-					<span class="logo"></span>
-					<h2><cms:text constant="header"/></h2>
-					<h3><cms:text constant="header_desc"/></h3>
+					<div>
+						<h2><cms:text constant="contact_title"/></h2>
+						<span><cms:text constant="contact_desc"/></span>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact_form"
+						/>
+					</div>
 				</div>
-				<div>
-					<h2><cms:text constant="share"/></h2>
-					<span><cms:text constant="social_share"/></span>
-					<a href="#" class="social"></a>
-					<a href="#" class="social"></a>
-					<a href="#" class="social"></a>
-					<a href="#" class="social"></a>
-					<span><cms:text constant="phone"/></span>
-					<span><cms:text constant="fax"/></span>
-					<span><cms:text constant="mail"/></span>
-					<span><cms:text constant="adress"/></span>
-					<a
-						href="'tel:'.Language::getText('number')"
-						class="phone"
-						cms:eval="href,class"
-					>
-					<cms:text constant="number"/>
-					</a>
+			</cms:desktop>
+			<cms:mobile>
+				<div class="contact blue wrap">
+					<div>
+						<h2><cms:text constant="share"/></h2>
+						<span><cms:text constant="social_share"/></span>
+						<a href="#" class="social"></a>
+						<a href="#" class="social"></a>
+						<a href="#" class="social"></a>
+						<a href="#" class="social"></a>
+						<span><cms:text constant="phone"/></span>
+						<span><cms:text constant="fax"/></span>
+						<span><cms:text constant="mail"/></span>
+						<span><cms:text constant="adress"/></span>
+						<a
+							href="'tel:'.Language::getText('number')"
+							class="phone"
+							cms:eval="href,class"
+						>
+						<cms:text constant="number"/>
+						</a>
+					</div>
+
+					<div>
+						<h2><cms:text constant="contact_title"/></h2>
+						<span><cms:text constant="contact_desc"/></span>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact_form"
+						/>
+					</div>
+					<div>
+						<span class="logo"></span>
+						<h2><cms:text constant="header"/></h2>
+						<h3><cms:text constant="header_desc"/></h3>
+					</div>
 				</div>
-
-				<div>
-					<h2><cms:text constant="contact_title"/></h2>
-					<span><cms:text constant="contact_desc"/></span>
-					<cms:module
-						name="contact_form"
-						action="show"
-						text_id="contact_form"
-					/>
-				</div>
-
-			</div>
-
+			</cms:mobile>
 			<footer>
 				<span><cms:text constant="copyright"/></span>
 			</footer>
