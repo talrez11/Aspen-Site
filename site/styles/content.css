@@ -333,21 +333,21 @@ div.galleries_images {
 }
 
 div.galleries_images.loading {
-        position: relative;
+    position: relative;
 }
 
 div.galleries_images.loading:after {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        content: '';
-        background-color: white;
-        background-color: rgba(255, 255, 255, 0.8);
-        background-image: url(../images/loading.gif);
-        background-repeat: no-repeat;
-        background-position: center center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url(../images/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 div.galleries_images img {
@@ -605,7 +605,7 @@ header {
 }
 
 form label input {
-  width: 160px;
+  	width: 160px;
 }
 
 div.galleries_names a {
