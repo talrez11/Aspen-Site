@@ -523,3 +523,50 @@ footer span a {
 footer span a:hover {
 	color:#5bc2d8;
 }
+
+/*Tablet Version*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+header {
+	padding: 100px calc((100vw - 1000px) / 2);
+}
+
+form label input {
+  width: 180px;
+}
+
+div.galleries_names a {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.galleries_images{
+	width: 1000px;
+}
+
+div.galleries_images img {
+	width: 20%;
+}
+
+div.activity_bottom_article {
+	width: 1000px;
+}
+
+div.contact {
+	padding: 100px calc((100vw - 1000px) / 2);
+}
+
+div.contact span.logo {
+    background-size: 350px 130px;
+}
+
+div.contact form label input {
+	width: calc(85% - 60px);
+}
+
+div.contact form div.controls button {
+	width: 92%;
+}
+
+}
