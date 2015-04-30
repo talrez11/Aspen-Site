@@ -72,7 +72,6 @@ Site.on_load = function() {
 	list.first().addClass('active');
 
 	list.on('click',function() {
-		event.preventDefault();
 		var link = $(this);
 		list.not(link).removeClass('active');
 		link.addClass('active');
