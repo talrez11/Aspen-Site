@@ -355,6 +355,10 @@ div.galleries_images img {
 	vertical-align: top;
 	margin-left: 10px;
 	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 3px grey;
 }
 
 div.activity_bottom_article {
