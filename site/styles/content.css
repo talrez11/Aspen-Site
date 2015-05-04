@@ -627,7 +627,7 @@ footer span a:hover {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
 header {
-	padding: 100px calc((100vw - 980px) / 2);
+	padding: 100px calc((100vw - 940px) / 2);
     background-position: -580px center;
 }
 
@@ -653,7 +653,7 @@ div.activity_bottom_article {
 }
 
 div.contact {
-	padding: 100px calc((100vw - 980px) / 2);
+	padding: 100px calc((100vw - 940px) / 2);
 }
 
 div.contact div:first-of-type {
@@ -666,6 +666,12 @@ div.contact div:last-of-type {
 
 div.contact span.logo {
     background-size: 330px 130px;
+}
+
+div.contact form label span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
 }
 
 div.contact form label input {
