@@ -37,14 +37,19 @@ header > h1 {
 
 }
 
-header > h2 {
+header > h2:first-of-type {
 	display: block;
 	padding-top: 25px;
-	padding-bottom: 25px;
 	width: 350px;
 	font-weight: 400;
-
 }
+
+header > h2:last-of-type {
+	display: block;
+	width: 400px;
+	font-weight: 400;
+}
+
 
 div.form_container {
 	position: absolute;
