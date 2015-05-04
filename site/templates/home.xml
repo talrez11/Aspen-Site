@@ -12,7 +12,8 @@
 			<header>
 				<span class="logo"></span>
 				<h1><cms:text constant="header"/></h1>
-				<h2><cms:text constant="header_desc"/></h2>
+				<h2><cms:text constant="header_desc1"/></h2>
+				<h2><cms:text constant="header_desc2"/></h2>
 				<div class="form_container">
 				<cms:desktop>
 					<h2><cms:text constant="form_title"/></h2>
